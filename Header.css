@@ -1,0 +1,153 @@
+.top-wrapper {
+  max-width: 1120px;
+  margin: 0 auto 20px;
+  padding: 0 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Top Navigation Bar */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.left_side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.header_heading {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.right_side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Summary Cards Row */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.stat-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.stat-label {
+  margin: 0;
+  font-size: 14px;
+  color: #334155;
+}
+
+.stat-label strong {
+  color: #0f172a;
+  font-size: 15px;
+}
+
+/* Card Color Accents */
+.stat-card.applied {
+  background-color: #f8fbff;
+  border-color: #bfdbfe;
+}
+.stat-card.applied .stat-icon {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.stat-card.interviewing {
+  background-color: #fffbeb;
+  border-color: #fde68a;
+}
+.stat-card.interviewing .stat-icon {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.stat-card.offers {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+.stat-card.offers .stat-icon {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.stat-card.rejected {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+}
+.stat-card.rejected .stat-icon {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .charts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}
